@@ -23,13 +23,16 @@ const AllCourses = () => {
 
 
     useEffect(() => {
-        const fetchData = async () => {
-          const res = await axios.get(`https://f5e54a3d-89aa-494d-bc79-13f3dfeb898e-00-1fgkmlcmh01cz.riker.replit.dev/courses`);
-          setData(res.data);
-        };
-        fetchData();
-    }, []);
+        axios.get(`https://f5e54a3d-89aa-494d-bc79-13f3dfeb898e-00-1fgkmlcmh01cz.riker.replit.dev/courses`)
+            .then(response => {
+                setData(response.data);
+            })
+            .catch(error => {
+            console.error('There was an error!', error);
+            });
+        }, []);
     
+
     useEffect(() => {
         setSearchResults(data.filter((x: Courses) => x.name.toLowerCase().includes(query)));},
     [query, data]);
