@@ -41,7 +41,7 @@ const Lesson = () => {
 
 
   useEffect(() => {
-    axios.get(`https://f5e54a3d-89aa-494d-bc79-13f3dfeb898e-00-1fgkmlcmh01cz.riker.replit.dev/courses/${coursesid}`)
+    axios.get(`https://7d501367-4615-4a19-9b28-489c83cb8582-00-uzzhfldkfse1.sisko.replit.dev/courses/${coursesid}`)
         .then(response => {
             setCoursesDetail(response.data);
             setLoading(false)
@@ -50,7 +50,7 @@ const Lesson = () => {
         console.error('There was an error!', error);
         setLoading(false)
         });
-    }, []);
+    }, [coursesid]);
 
     if (loading) {
       return <Loading/>
