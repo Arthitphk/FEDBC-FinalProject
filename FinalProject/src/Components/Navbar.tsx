@@ -16,7 +16,7 @@ const Navbar = () => {
     <nav className="p-4 dark:bg-gray-800 container mx-auto">
       <div className="flex  justify-between">
           <div className="text-black text-2xl font-bold dark:text-white ">Coding
-            <span className="text-teal-500">WithMe</span>
+            <span className="text-teal-500">Tech</span>
           </div>
 
           <div className="md:hidden">
