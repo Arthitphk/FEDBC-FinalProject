@@ -39,7 +39,7 @@ const Navbar = () => {
           </div>
 
 
-          <ul className="hidden md:flex space-x-4">
+          <ul className="hidden md:flex space-x-4 p-1">
               {/* <li><a href="/Home" className="dark:text-white font-bold dark:hover:text-teal-500">Home</a></li> */}
 
               <li><a href="#" className="dark:text-white font-bold dark:hover:text-teal-500  hover:text-purple-700">หลักสูตรทั้งหมด</a></li>
