@@ -13,11 +13,13 @@ const Navbar = () => {
 
 
   return (
-    <nav className="p-4 dark:bg-gray-800 container mx-auto">
+    <nav className="p-4 dark:bg-gray-800 container max-w-7xl mx-auto">
       <div className="flex  justify-between">
-          <div className="text-black text-2xl font-bold dark:text-white ">Coding
+          <a href="/Home">
+            <div className="text-black text-2xl font-bold dark:text-white ">Coding
             <span className="text-teal-500">Tech</span>
           </div>
+          </a>
 
           <div className="md:hidden">
             <button id="menu-toggle" className="dark:text-white">
@@ -38,11 +40,15 @@ const Navbar = () => {
 
 
           <ul className="hidden md:flex space-x-4">
-              <li><a href="/Home" className="dark:text-white font-bold dark:hover:text-teal-500">Home</a></li>
-              <li><a href="#" className="dark:text-white font-bold dark:hover:text-teal-500">About</a></li>
-              <li><a href="#" className="dark:text-white font-bold dark:hover:text-teal-500">Service</a></li>
-              <Theme/>
+              {/* <li><a href="/Home" className="dark:text-white font-bold dark:hover:text-teal-500">Home</a></li> */}
+
+              <li><a href="#" className="dark:text-white font-bold dark:hover:text-teal-500  hover:text-purple-700">หลักสูตรทั้งหมด</a></li>
+              <li><a href="#" className="dark:text-white font-bold dark:hover:text-teal-500">เกี่ยวกับเรา</a></li>
+              <li><a href="#" className="dark:text-white font-bold dark:hover:text-teal-500">บริการ</a></li>
           </ul>
+          <div className="hidden md:flex">
+            <Theme/>
+          </div>
       </div>
       {open ? (
             <ul className="flex-col md:hidden">

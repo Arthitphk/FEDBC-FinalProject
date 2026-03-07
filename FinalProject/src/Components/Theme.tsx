@@ -30,7 +30,7 @@ const Theme = () => {
      dark:bg-black bg-green-300 cursor-pointer rounded-full p-1 " 
      onClick={() => setdarkMode(!darkMode)}>
         <WbSunnyIcon className="text-yellow-400"/>
-        <div className="absolute bg-white  w-6 h-6 rounded-full shadow-md transform transition-transform duration-300"
+        <div className="absolute   dark:bg-white bg-yellow-300 w-6 h-6 rounded-full shadow-md transform transition-transform duration-300"
         style={darkMode ? {left: "2px"} : {right:"2px"}}
         ></div>
         <ModeNightIcon className="ml-auto text-white"/>

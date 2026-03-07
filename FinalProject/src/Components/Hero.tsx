@@ -3,14 +3,13 @@ import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import StarIcon from '@mui/icons-material/Star';
 import VerifiedUserIcon from '@mui/icons-material/VerifiedUser';
 import LanguageIcon from '@mui/icons-material/Language';
-import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import MenuBookIcon from '@mui/icons-material/MenuBook';
+
 
 const Hero = () => {
   return (
-    <section className="relative min-h-[90vh] flex items-center overflow-hidden dark:bg-gray-800 selection:bg-indigo-100 selection:text-indigo-900 font-sans">
+    <section className="relative min-h-[90vh] flex items-center overflow-hidden dark:bg-gray-800 selection:bg-indigo-100 selection:text-indigo-900 font-sans mt-5">
       {/* Background Decorative Elements */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full max-w-7xl pointer-events-none">
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full max-w-7xl ">
       </div>
 
       <div className="container mx-auto max-w-7xl px-6 relative z-10">
@@ -36,7 +35,7 @@ const Hero = () => {
 
             {/* CTA Group */}
             <div className="flex flex-wrap gap-5">
-              <button className="group relative flex items-center justify-center gap-3 bg-slate-900 text-white px-10 py-5 rounded-2xl font-bold text-lg shadow-2xl shadow-slate-200 transition-all hover:bg-indigo-600 hover:shadow-indigo-200 active:scale-95">
+              <button className="group relative flex items-center justify-center gap-3 bg-slate-900 text-white px-10 py-5 rounded-2xl font-bold text-lg shadow-2xl  transition-all hover:bg-indigo-600 hover:shadow-indigo-200 active:scale-95">
                 เริ่มต้นใช้งานฟรี
                 <ArrowForwardIcon className="group-hover:translate-x-1 transition-transform" />
               </button>
@@ -56,19 +55,19 @@ const Hero = () => {
                   <VerifiedUserIcon sx={{ fontSize: 20 }} />
                   <span className="font-bold dark:text-white">คอร์สคุณภาพ</span>
                 </div>
-                <p className="text-sm text-slate-500 font-medium">คัดสรรโดยผู้เชี่ยวชาญ</p>
+                <p className="text-sm dark:text-white font-medium">คัดสรรโดยผู้เชี่ยวชาญ</p>
               </div>
               <div className="space-y-2">
                 <div className="flex items-center gap-2 text-indigo-600">
                   <LanguageIcon sx={{ fontSize: 20 }} />
                   <span className="font-bold dark:text-white">ทั่วทุกมุมโลก</span>
                 </div>
-                <p className="text-sm text-slate-500 font-medium">เข้าถึงได้ 24 ชั่วโมง</p>
+                <p className="text-sm dark:text-white font-medium">เข้าถึงได้ 24 ชั่วโมง</p>
               </div>
               <div className="hidden md:block space-y-2">
                 <div className="flex items-center gap-1 text-yellow-500">
                   <StarIcon sx={{ fontSize: 18 }} />
-                  <span className="font-bold dark:text-white ml-1">4.9/5.0</span>
+                  <span className="font-bold  ml-1">4.9/5.0</span>
                 </div>
                 <p className="text-sm dark:text-white font-medium">ความพึงพอใจผู้ใช้งาน</p>
               </div>
@@ -87,24 +86,6 @@ const Hero = () => {
                     alt="Students collaborating" 
                     className="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-700 hover:scale-105"
                   />
-                  
-                  {/* Glassmorphism Overlay Card */}
-                  <div className="absolute bottom-6 left-6 right-6 p-6 rounded-3xl bg-white/80 backdrop-blur-xl border border-white/20 shadow-2xl">
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center gap-4">
-                        <div className="h-12 w-12 rounded-2xl bg-indigo-600 flex items-center justify-center text-white shadow-lg shadow-indigo-200">
-                          <MenuBookIcon />
-                        </div>
-                        <div>
-                          <p className="text-xs font-bold text-indigo-600 uppercase">Live Now</p>
-                          <p className="text-sm font-black text-slate-900 leading-tight">UX/UI Advanced Class</p>
-                        </div>
-                      </div>
-                      <button className="h-10 w-10 rounded-full border border-slate-200 flex items-center justify-center hover:bg-indigo-600 hover:text-white hover:border-indigo-600 transition-all">
-                        <ChevronRightIcon />
-                      </button>
-                    </div>
-                  </div>
                 </div>
               </div>
 
