@@ -23,7 +23,7 @@ const Hero = () => {
               <h1 className="text-5xl md:text-6xl lg:text-[5rem] font-black tracking-tight dark:text-white leading-[0.95]">
                 เรียนรู้อย่าง <br />
                 <span className="relative">
-                  <span className="relative z-10 text-indigo-600">ไร้ขีดจำกัด</span>
+                  <span className="relative z-10 text-teal-500">ไร้ขีดจำกัด</span>
                   <span className="absolute bottom-2 left-0 w-full h-4 bg-indigo-100/60 -z-10 rotate-1" />
                 </span>
               </h1>
@@ -41,7 +41,7 @@ const Hero = () => {
               </button>
               
               <button className="group flex items-center justify-center gap-3 bg-white border border-slate-200 text-slate-900 px-10 py-5 rounded-2xl font-bold text-lg transition-all hover:bg-slate-50 hover:border-slate-300">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-indigo-50 text-indigo-600 group-hover:bg-indigo-600 group-hover:text-white transition-colors">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-indigo-50 text-teal-500 group-hover:bg-indigo-600 group-hover:text-white transition-colors">
                   <PlayArrowIcon />
                 </div>
                 วิธีการเรียน
@@ -51,14 +51,14 @@ const Hero = () => {
             {/* Proof Features */}
             <div className="grid grid-cols-2 md:grid-cols-3 gap-6 pt-10 border-t border-slate-200">
               <div className="space-y-2">
-                <div className="flex items-center gap-2 text-indigo-600">
+                <div className="flex items-center gap-2 text-teal-500">
                   <VerifiedUserIcon sx={{ fontSize: 20 }} />
                   <span className="font-bold dark:text-white">คอร์สคุณภาพ</span>
                 </div>
                 <p className="text-sm dark:text-white font-medium">คัดสรรโดยผู้เชี่ยวชาญ</p>
               </div>
               <div className="space-y-2">
-                <div className="flex items-center gap-2 text-indigo-600">
+                <div className="flex items-center gap-2 text-teal-500">
                   <LanguageIcon sx={{ fontSize: 20 }} />
                   <span className="font-bold dark:text-white">ทั่วทุกมุมโลก</span>
                 </div>
