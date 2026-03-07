@@ -1,9 +1,10 @@
 import AllCourses from "../Components/AllCourses"
 import Navbar from "../Components/Navbar"
-import Bg from "../Images/codingwall.jpg"
+// import Bg from "../Images/codingwall.jpg"
 import Category from "../Components/Category"
 import Heading from "../Components/Heading"
 import Footer from "../Components/Footer"
+import Hero from "../Components/Hero"
 
 const features = [
   { name: 'Python'},
@@ -12,12 +13,12 @@ const features = [
   { name: 'Data Science with R'}
 ]
 
-const Hero = {
-  backgroundImage: `url(${Bg})`,
-  backgroundSize: "cover",
-  backgroundRepeat:"no-repeat",
-  backgroundPosition:"center"
-}
+// const Hero = {
+//   backgroundImage: `url(${Bg})`,
+//   backgroundSize: "cover",
+//   backgroundRepeat:"no-repeat",
+//   backgroundPosition:"center"
+// }
 
 
 
@@ -30,7 +31,8 @@ const Home = () => {
   return (
     <div>
       <Navbar/>
-      <div className=" w-full p-20 h-96" style={Hero}>
+      <Hero/>
+      {/* <div className=" w-full p-20 h-96" style={Hero}>
         <div className="flex flex-col items-center justify-center">
           <h1 className="text-4xl font-bold text-yellow-600">Online Education</h1>
           <div className="mt-4">
@@ -39,7 +41,7 @@ const Home = () => {
             </button>
           </div>
         </div>
-      </div>
+      </div> */}
       <AllCourses/>
       <div className="dark:bg-gray-700 bg-neutral-200">
       <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
