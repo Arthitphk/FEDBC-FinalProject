@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const CourseCard = ({courses}) => {
   return (
-    <div className="group relative flex flex-col overflow-hidden rounded-2xl dark:bg-gray-700  shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl border dark:border-gray-700 ">
+    <div className="group relative flex flex-col overflow-hidden rounded-2xl dark:bg-gray-700  shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl border dark:border-gray-700  ">
       <div className="relative h-44 w-full overflow-hidden bg-slate-200">
         <img 
           src={CoursesImg(courses.id)}

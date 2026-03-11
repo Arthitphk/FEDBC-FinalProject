@@ -3,7 +3,6 @@ import axios from 'axios';
 import { useSearchParams} from "react-router-dom";
 import CoursesImg from "../Components/CoursesImg"
 import { Link } from "react-router-dom";
-import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar"
 import { useEffect, useState } from "react";
 
@@ -61,46 +60,8 @@ const Categories = () => {
                     </div>
                 </div>
         </div>
-        <div className="dark:bg-gray-700 py-24 sm:py-32 mt-44">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <h2 className="text-center text-lg font-semibold leading-8 dark:text-white">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos explicabo eaque id earum temporibus veniam laborum similique obcaecati sunt reprehenderit dolores autem, facere commodi, magnam rerum atque voluptatibus perferendis soluta?
-        </h2>
-        <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-          <img
-            className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-            src="src\Images\Python-icon.png"
-            width={158}
-            height={48}
-          />
-          <img
-            className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-            src="src\Images\javascript-icon.png"
-            width={158}
-            height={48}
-          />
-          <img
-            className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-            src="src\Images\tensorflow-icon.png"
-            width={158}
-            height={48}
-          />
-          <img
-            className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
-            src="src\Images\data-science-with-r-icon.png"
-            width={158}
-            height={48}
-          />
-          <img
-            className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
-            src="src\Images\pngwing.com.png"
-            width={158}
-            height={48}
-          />
-        </div>
-      </div>
-    </div>
-      <Footer/>
+        
+    
     </div>
   )
 }
