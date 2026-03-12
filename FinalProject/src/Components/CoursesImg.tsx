@@ -10,6 +10,14 @@ const CourseImg = (courseId: number): string => {
         return "src/Images/TensorFlow.png";
       case 4:
         return "src/Images/datascience-with-r.png";
+      case 5:
+        return "src/Images/uiux_text_2.jpg";
+      case 6:
+        return "src/Images/AppDevelopment.jpg";
+      case 7:
+        return "src/Images/business-data-analysis.jpg";
+      case 8:
+        return "src/Images/DevOps.jpg";
       default:
         return "";
     }

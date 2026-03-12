@@ -1,7 +1,7 @@
 import CoursesImg from "./CoursesImg"
 import { Link } from "react-router-dom";
-
-
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import PublishIcon from '@mui/icons-material/Publish';
 const CourseCard = ({courses}) => {
   return (
     <div className="group relative flex flex-col overflow-hidden rounded-2xl dark:bg-gray-700  shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl border dark:border-gray-700  ">
@@ -21,6 +21,10 @@ const CourseCard = ({courses}) => {
           <span className="text-[10px] font-bold uppercase tracking-widest text-blue-600 bg-blue-50 px-2 py-1 rounded">
             {courses.category}
           </span>
+          <div className="flex items-center gap-1.5 text-slate-400">
+            <PublishIcon />
+            <span className="text-xs font-semibold">{courses.level}</span>
+          </div>
         </div>
 
         {/* 2. Name (Title) */}
@@ -38,6 +42,7 @@ const CourseCard = ({courses}) => {
           <Link to={`/Lecture?course_id=${courses.id}`}>
           <button className="flex w-full items-center justify-center gap-2 rounded-xl bg-slate-900 px-4 py-3 text-sm font-bold text-white transition-all hover:bg-blue-600 active:scale-[0.98]">
             รายละเอียดคอร์ส
+            <ArrowForwardIosIcon />
           </button>                          
           </Link>
           

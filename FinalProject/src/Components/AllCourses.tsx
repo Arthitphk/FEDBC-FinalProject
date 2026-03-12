@@ -8,6 +8,7 @@ type Courses = {
     name: string;
     description: string;
     category: string;
+    level: string;
 }
 
 
@@ -22,6 +23,7 @@ const AllCourses = () => {
         async function Allcourse() {
             try {
                 const response = await axios.get(`https://7d501367-4615-4a19-9b28-489c83cb8582-00-uzzhfldkfse1.sisko.replit.dev/courses`);
+                console.log(response.data)
                 setData(response.data);
             } catch (error) {
                 console.error(error);
@@ -42,7 +44,7 @@ const AllCourses = () => {
                 </header>
 
                 {/* Responsive Grid */}
-                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
                     {data.map((courses: Courses) => (
                         <CourseCard key={courses.id} courses={courses} />
                     ))}
