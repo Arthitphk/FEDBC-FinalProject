@@ -16,7 +16,6 @@ const Home = () => {
       <Navbar/>
       <Hero/>
       <AllCourses/>
-      {/* <Category/> */}
       <Footer/>
     </div>
   )

@@ -18,6 +18,8 @@ const CourseImg = (courseId: number): string => {
         return "src/Images/business-data-analysis.jpg";
       case 8:
         return "src/Images/DevOps.jpg";
+      case 9:
+        return "src/Images/typescript.jpeg";
       default:
         return "";
     }
