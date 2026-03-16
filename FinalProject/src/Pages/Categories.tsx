@@ -24,8 +24,8 @@ type Courses = {
 const Categories = () => {
   const [ searchParams ] = useSearchParams()
   const coursesid = searchParams.get('course_id')
-  const [coursesDetail, setCoursesDetail] = useState<Courses| null>(null);
-
+  const [coursesDetail, setCoursesDetail] = useState<Courses | null>(null);
+ 
 
   useEffect(() => {
     axios.get(`https://7d501367-4615-4a19-9b28-489c83cb8582-00-uzzhfldkfse1.sisko.replit.dev/courses/${coursesid}`)

@@ -4,7 +4,7 @@ import Navbar from "../Components/Navbar"
 // import Category from "../Components/Category"
 import Footer from "../Components/Footer"
 import Hero from "../Components/Hero"
-
+import Instructors from "../Components/Instructors"
 
 
 
@@ -16,6 +16,7 @@ const Home = () => {
       <Navbar/>
       <Hero/>
       <AllCourses/>
+      <Instructors/>
       <Footer/>
     </div>
   )

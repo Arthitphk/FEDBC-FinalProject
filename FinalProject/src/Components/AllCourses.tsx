@@ -46,7 +46,6 @@ const AllCourses = () => {
         <div>
             <div className="mx-auto max-w-7xl">
                 <header className="mb-12 text-center md:text-left">
-                    <h2 className="text-blue-600 font-bold tracking-tight mb-2 uppercase text-sm">Exploration</h2>
                     <h1 className="text-4xl font-extrabold text-slate-900 dark:text-white">คอร์สเรียนทั้งหมด</h1>
                 </header>
 
@@ -69,7 +68,7 @@ const AllCourses = () => {
                                 <div className="flex flex-1 flex-col p-6">
                                     {/* 1. Category */}
                                     <div className="mb-3 flex items-center justify-between">
-                                        <span className="text-[8px] font-bold uppercase tracking-widest text-blue-600 bg-blue-50 px-2 py-1 rounded">
+                                        <span className="text-[10px] font-bold uppercase tracking-widest text-blue-600 bg-blue-50 px-2 py-1 rounded">
                                             {courses.category}
                                         </span>
                                         <div className="flex items-center gap-1.5 text-slate-400">

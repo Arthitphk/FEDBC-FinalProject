@@ -8,7 +8,6 @@ import {
   Phone,
   Place,
   ArrowForward,
-  MenuBook,
   Public,
   VerifiedUser
 } from '@mui/icons-material';
@@ -76,9 +75,7 @@ const Footer = () => {
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-2 mb-6">
-              <div className="bg-blue-600 p-2 rounded-lg flex items-center justify-center">
-                <MenuBook className="text-white" />
-              </div>
+             
               <div className="text-black text-2xl font-bold dark:text-white ">Coding
                 <span className="text-teal-500">Tech</span>
               </div>
