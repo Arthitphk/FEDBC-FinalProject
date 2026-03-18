@@ -4,13 +4,6 @@ import axios from "axios";
 // import CategoryIcon from '@mui/icons-material/Category';
 
 
-type Courses = {
-    id: number;
-    name: string;
-    description: string;
-    category: string;
-}
-
 
 
 
@@ -19,18 +12,20 @@ type Courses = {
 
 const Category = () => {
 
-  const [category, setCategory] = useState<Courses[]>([]);
+  const [category, setCategory] = useState<string[]>([]);
+  // const [loading, setLoading] = useState<boolean>(true);
 
     useEffect(() => {
        async function Allcategory() {
             try {
-                const response = await axios.get(`https://7d501367-4615-4a19-9b28-489c83cb8582-00-uzzhfldkfse1.sisko.replit.dev/categories`);
-                console.log(category);
-                
+                const response = await axios.get<string[]>(`https://7d501367-4615-4a19-9b28-489c83cb8582-00-uzzhfldkfse1.sisko.replit.dev/categories`);
                 setCategory(response.data);
+                console.log(response.data);
             } catch (error) {
                 console.error(error);
-            } 
+            } finally {
+              // setLoading(false)
+            }
         }
         Allcategory()
     }, []);
@@ -38,7 +33,21 @@ const Category = () => {
 
 
   return (
-    <div></div>
+    <div>
+      <div className="p-4">
+      <h2 className="text-xl font-bold mb-4">Course Categories</h2>
+      <div className="flex flex-wrap gap-2">
+        {category.map((category) => (
+          <span 
+            key={category} 
+            className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full border border-blue-200"
+          >
+            {category}
+          </span>
+        ))}
+      </div>
+    </div>
+    </div>
     // <div className="flex flex-row flex-wrap justify-around gap-5 lg:container lg:mx-auto"> 
     //   {category.map((category: Courses) => (
     //       <div key={category.id}>

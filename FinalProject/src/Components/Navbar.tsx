@@ -3,7 +3,7 @@ import Theme from "./Theme";
 import CollectionsBookmarkIcon from '@mui/icons-material/CollectionsBookmark';
 import InfoIcon from '@mui/icons-material/Info';
 import RoomServiceIcon from '@mui/icons-material/RoomService';
-import Search from "./Search";
+
 
 const Navbar = () => {
 
@@ -51,7 +51,7 @@ const Navbar = () => {
             <li><a href="#" className="dark:text-white font-bold dark:hover:text-teal-500">< RoomServiceIcon className="p-1"/>บริการ</a></li>
           </ul>
           <div className="hidden md:flex">
-            <Search/>
+            
             <Theme />
           </div>
         </div>
