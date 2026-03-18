@@ -52,7 +52,7 @@ const AllCourses = () => {
                 {loading ?  (
                     <Loading/>
                 ) : (
-                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 p-5">
                     {data.map((courses: Courses) => (
                         <div key={courses.id}>
                             <div className="group relative flex flex-col overflow-hidden rounded-2xl dark:bg-gray-700  shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl border dark:border-gray-700  ">

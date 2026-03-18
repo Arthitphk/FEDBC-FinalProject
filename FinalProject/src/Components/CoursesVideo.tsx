@@ -10,6 +10,16 @@ const CourseVideo = (courseId: number): string => {
         return "https://www.youtube.com/watch?v=i8NETqtGHms";
       case 4:
         return "https://www.youtube.com/watch?v=DPAsYtUHkkM";
+      case 5: 
+        return "https://www.youtube.com/watch?v=EcbgbKtOELY"
+      case 6: 
+        return "https://www.youtube.com/watch?v=yye7rSsiV6k&t=343s"
+      case 7: 
+        return "https://www.youtube.com/watch?v=SbY1DhAgyGE"
+      case 8: 
+        return "https://www.youtube.com/watch?v=2D8VkHTbI8o"
+      case 9: 
+        return "https://www.youtube.com/watch?v=zQnBQ4tB3ZA"  
       default:
         return "";
     }
