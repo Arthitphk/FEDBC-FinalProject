@@ -5,11 +5,11 @@ const CourseImg = (courseId: number): string => {
       case 1:
         return "src/Images/pthon.png";
       case 2:
-        return "src/Images/javascript.png";
+        return "src/Images/JS.jpg";
       case 3:
-        return "src/Images/TensorFlow.png";
+        return "src/Images/tensorflow.jpg";
       case 4:
-        return "src/Images/datascience-with-r.png";
+        return "src/Images/data-science-R.jpg";
       case 5:
         return "src/Images/uiux_text_2.jpg";
       case 6:

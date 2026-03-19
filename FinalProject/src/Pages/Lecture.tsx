@@ -152,7 +152,7 @@ const Lecture = () => {
                             </div>
 
                             {/* Feature List */}
-                            <h3 className="text-lg md:text-xl font-bold text-slate-800 mb-6">หัวข้อการเรียนรู้:</h3>
+                            <h3 className="text-lg md:text-xl font-bold dark:text-white mb-6">หัวข้อการเรียนรู้:</h3>
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12">
                                 {[
                                     'แนวคิดพื้นฐานและการใช้งาน',
@@ -160,9 +160,9 @@ const Lecture = () => {
                                     'เวิร์กชอปปฏิบัติจริง Step-by-Step',
                                     'สรุปและแบบทดสอบท้ายบทเรียน'
                                 ].map((item, idx) => (
-                                    <div key={idx} className="flex items-center gap-3 p-4 bg-white border border-slate-100 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                                    <div key={idx} className="flex items-center gap-3 p-4 dark:bg-gray-500 border border-slate-100 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
                                         <CheckCircle className="text-emerald-500 !text-xl shrink-0" />
-                                        <span className="text-slate-700 text-sm font-semibold">{item}</span>
+                                        <span className="dark:text-white text-sm font-semibold">{item}</span>
                                     </div>
                                 ))}
                             </div>
