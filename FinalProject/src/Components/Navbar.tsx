@@ -3,6 +3,7 @@ import Theme from "./Theme";
 import CollectionsBookmarkIcon from '@mui/icons-material/CollectionsBookmark';
 import InfoIcon from '@mui/icons-material/Info';
 import RoomServiceIcon from '@mui/icons-material/RoomService';
+import Search from "./Search";
 
 
 const Navbar = () => {
@@ -43,17 +44,16 @@ const Navbar = () => {
           </div>
 
 
+          
+          <div className="hidden md:flex">
+            <Search/>
+          </div>
           <ul className="hidden md:flex space-x-4 p-1">
-            
-
             <li><a href="#" className="dark:text-white font-bold dark:hover:text-teal-500  hover:text-purple-700"><CollectionsBookmarkIcon className="p-1"/>หลักสูตรทั้งหมด</a></li>
             <li><a href="#" className="dark:text-white font-bold dark:hover:text-teal-500"><InfoIcon className="p-1"/>เกี่ยวกับเรา</a></li>
             <li><a href="#" className="dark:text-white font-bold dark:hover:text-teal-500">< RoomServiceIcon className="p-1"/>บริการ</a></li>
-          </ul>
-          <div className="hidden md:flex">
-            
             <Theme />
-          </div>
+          </ul>
         </div>
       </div>
       {open ? (
