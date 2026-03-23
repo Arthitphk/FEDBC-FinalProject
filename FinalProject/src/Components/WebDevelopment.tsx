@@ -49,7 +49,7 @@ const WebDevelopment = () => {
             <div>
                 <div className="mx-auto max-w-7xl mb-12">
                     <header className="mb-12 text-center md:text-left">
-                        <h1 className="text-4xl font-extrabold text-slate-900 dark:text-white">Programming Fundamentals</h1>
+                        <h1 className="text-4xl font-extrabold text-slate-900 dark:text-white">Web Development</h1>
                     </header>
 
                     {loading ? (
