@@ -7,9 +7,7 @@ import {
   Mail,
   Phone,
   Place,
-  ArrowForward,
-  Public,
-  VerifiedUser
+  ArrowForward
 } from '@mui/icons-material';
 
 const Footer = () => {
@@ -143,31 +141,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom Footer */}
-      <div className="bg-slate-950 py-8 border-t border-slate-800">
-        <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-sm text-slate-500">
-            © {new Date().getFullYear()} EduSmart Online. สงวนลิขสิทธิ์ทุกประการ
-          </p>
-
-          <div className="flex items-center gap-6 text-sm text-slate-500">
-            <div className="flex items-center gap-1">
-              <Public sx={{ fontSize: 16 }} />
-              <span>ภาษาไทย (TH)</span>
-            </div>
-            <div className="flex items-center gap-1">
-              <VerifiedUser sx={{ fontSize: 16 }} />
-              <span>ระบบรักษาความปลอดภัย SSL</span>
-            </div>
-          </div>
-
-          <div className="flex gap-4">
-            <div className="h-8 w-12 bg-slate-800 rounded flex items-center justify-center font-bold text-[10px] text-slate-400 border border-slate-700">VISA</div>
-            <div className="h-8 w-12 bg-slate-800 rounded flex items-center justify-center font-bold text-[10px] text-slate-400 border border-slate-700">MASTER</div>
-            <div className="h-8 w-12 bg-slate-800 rounded flex items-center justify-center font-bold text-[10px] text-slate-400 border border-slate-700">PROMPT</div>
-          </div>
-        </div>
-      </div>
+     
     </footer>
   );
 };
