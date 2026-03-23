@@ -4,6 +4,12 @@ import Navbar from "../Components/Navbar"
 // import Category from "../Components/Category"
 import Footer from "../Components/Footer"
 import Hero from "../Components/Hero"
+import ProgrammingFundamentals from "../Components/ProgrammingFundamentals"
+import WebDevelopment from "../Components/WebDevelopment"
+import MachineLearning from "../Components/MachineLearning"
+import DataScience from "../Components/DataScience"
+import MobileDevelopment from "../Components/MobileDevelopment"
+import WebDesign from "../Components/WebDesign"
 // import Category from "../Components/Category"
 
 
@@ -14,9 +20,13 @@ const Home = () => {
     <div>
       <Navbar/>
       <Hero/>
-      <AllCourses/>
-      
-      {/* <Category/> */}
+      <AllCourses/> 
+      <ProgrammingFundamentals/>
+      <WebDevelopment/>
+      <MachineLearning/>
+      <DataScience/>
+      <MobileDevelopment/>
+      <WebDesign/>
       <Footer/>
     </div>
   )

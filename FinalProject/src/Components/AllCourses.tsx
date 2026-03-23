@@ -44,7 +44,7 @@ const AllCourses = () => {
     return (
 
         <div>
-            <div className="mx-auto max-w-7xl">
+            <div className="mx-auto max-w-7xl mb-12">
                 <header className="mb-12 text-center md:text-left">
                     <h1 className="text-4xl font-extrabold text-slate-900 dark:text-white">คอร์สเรียนทั้งหมด</h1>
                 </header>

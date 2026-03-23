@@ -8,7 +8,7 @@ import Categories from './Pages/Categories'
 function App() {
   return (
    <Routes>
-      <Route path='/' element={<Home/>}/> 
+      <Route path='/Home' element={<Home/>}/> 
       <Route path='/Lecture' element={<Lecture/>}/> 
       <Route path='/Lesson' element={<Lesson/>}/>
       <Route path='/Categories' element={<Categories/>}/>  
